@@ -1,14 +1,17 @@
 {
-  "name": "test",
+  "name": "e2e-login-test-moberries",
   "version": "1.0.0",
+  "author": "psplery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psplery/e2e_Challenge.git"
+  },
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "npx cypress open"
+    "cypress:open": "npx cypress open",
+    "cypress:run": "cypress run"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^3.8.3"
