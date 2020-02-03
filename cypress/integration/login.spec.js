@@ -1,4 +1,4 @@
-describe('My First Test', function() {
+describe('e2eLoginTest', function() {
 
     // Positive Test-Case
     it('It renders succesful login', function() {
@@ -17,7 +17,8 @@ describe('My First Test', function() {
       cy.visit('/login')
       cy.get('#email').type(wrongMail)
       cy.get('#password').type(Cypress.env('password'))
-      cy.get('form > .btn').should('be.disabled')
+      cy.get('form > .btn').click()
+      cy.url().should('include', '/login')
     })
 
 
@@ -26,7 +27,8 @@ describe('My First Test', function() {
       cy.visit('/login')
       cy.get('#email').type(Cypress.env('email'))
       cy.get('#password').type(wrongPW)
-      cy.get('form > .btn').should('be.disabled')
+      cy.get('form > .btn').click()
+      cy.url().should('include', '/login')
     })
 
 
