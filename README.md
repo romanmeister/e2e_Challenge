@@ -18,7 +18,12 @@ Create cypress.env.json file in directory 'root', and insert valid account infor
 }
 ```
 
-Run tests
+Run tests (headless)
 ```
 npm run cypress:run
+```
+
+Run tests (with cypress UI)
+```
+npm run cypress:open
 ```
